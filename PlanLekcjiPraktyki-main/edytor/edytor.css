@@ -1,0 +1,180 @@
+/* --- Gradient na całe tło strony --- */
+body {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(180deg, #d16200, #a81c00, #313131);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* --- Nagłówki --- */
+h1 {
+    font-size: 2.5em; /* Zmniejszony rozmiar nagłówka */
+    color: #FFD700;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.8);
+    animation: titleShake 1.5s ease-in-out 2;
+}
+
+/* Animacja dla h1 */
+@keyframes titleShake {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+/* --- Tabele --- */
+table {
+    width: 85%; /* Zmniejszona szerokość tabeli */
+    border-collapse: collapse;
+    margin: 15px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #800000;
+    color: #ffcc00;
+    padding: 12px; /* Zmniejszona wysokość nagłówków tabeli */
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid #ff4500;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #ffcc00;
+    color: #800000;
+    padding: 8px; /* Zmniejszony padding dla komórek tabeli */
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #800000;
+    box-shadow: 0px 0px 5px rgba(255, 69, 0, 0.2);
+}
+
+/* --- Pola rozwijane (select) --- */
+select {
+    padding: 8px; /* Zmniejszony padding */
+    font-size: 0.9em; /* Zmniejszony rozmiar czcionki */
+    color: #fff;
+    background-color: #800000;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+select:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 3px;
+}
+
+/* --- Przycisk "Usuń" --- */
+button, input[type="button"] {
+    padding: 8px 15px; /* Zmniejszony padding */
+    font-size: 0.9em; /* Zmniejszony rozmiar czcionki */
+    color: #fff;
+    background-color: #800000;
+    border: 2px solid #FFD700;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #FF4500;
+    transform: scale(1.1);
+    color: #FFD700;
+}
+
+button:focus, input[type="button"]:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* --- Pola tekstowe (jeśli są używane) --- */
+input[type="text"], input[type="number"] {
+    padding: 8px; /* Zmniejszony padding */
+    font-size: 0.9em; /* Zmniejszony rozmiar czcionki */
+    color: #800000;
+    background-color: #FFD700;
+    border: 2px solid #800000;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    background-color: #FFEB3B;
+    border-color: #FF4500;
+}
+
+/* --- Stopka --- */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2F4F4F;
+    color: white;
+    text-align: center;
+    padding: 6px 0; /* Zmniejszona wysokość stopki */
+    font-size: 0.8em;
+    opacity: 0.8;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FF4500;
+}
+
+a {
+    text-decoration: none;
+    color: #800000; /* Ciemnoczerwony kolor tekstu linków */
+}
+        /* Styl przycisku */
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #800000;
+            border: solid;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 8px;
+            border-color: #ffcc00;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        a:hover {
+            color: #ff4500; /* Pomarańczowy kolor po najechaniu myszką */
+        }
